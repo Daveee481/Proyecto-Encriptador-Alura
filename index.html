@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ENCRIPTADOR</title>
+</head>
+
+<body>
+    <header>
+        <img src="assets/img/aluraoracle.png" alt="logo alura">
+    </header>
+    <main>
+        <form class="form_section">
+            <textarea class="form_input" name="mensaje" id="Textarea" cols="30" rows="10"
+                placeholder="Ingrese el texto aquí"></textarea>
+            <div class="btn_container">
+                <div class="alert_msj">
+                    <img src="assets/img/wrong.png" alt="alert">
+                    <p>ingresar solo letras minúsculas y sin acento</p>
+                </div>
+            </div>
+            <div class="submit_container">
+                <input class="form_btn" type="submit" value="Encriptar" id="encriptarBtn" />
+                <input class="form_btn--secondary" type="submit" value="Desencriptar" id="desencriptarBtn" />
+            </div>
+        </form>
+        <aside class="result">
+            <img src="assets/img/imagebody.png" alt="Imagen body" class="result_img">
+            <div id="carga" class="loader hidden"></div>
+            <div class="result_container">
+                <h3 class="result_title">Ningún mensaje fue encontrado</h3>
+                <p id="result_text" class="result_text">
+                    Ingresa el texto que deseas encriptar o desencriptar.
+                </p>
+                <button id="copiarBtn" class="form_btn--secondary hidden">Copiar</button>
+            </div>
+        </aside>
+    </main>
+    <script src="js.js"></script>
+</body>
+
+</html>
